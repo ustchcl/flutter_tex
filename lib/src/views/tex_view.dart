@@ -23,6 +23,9 @@ class TeXView extends StatefulWidget {
   /// Callback when TEX rendering finishes.
   final Function(double height) onRenderFinished;
 
+  /// Callback when TEX rendering finishes.
+  final Function(dynamic obj) inputCallback;
+
   const TeXView({
     Key key,
     @required this.child,
@@ -31,6 +34,7 @@ class TeXView extends StatefulWidget {
     this.loadingWidgetBuilder,
     this.onRenderFinished,
     this.renderingEngine,
+    this.inputCallback,
   }) : super(key: key);
 
   @override

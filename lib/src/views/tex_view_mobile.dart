@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_tex/flutter_tex.dart';
@@ -42,6 +44,16 @@ class TeXViewState extends State<TeXView> with AutomaticKeepAliveClientMixin {
 
   Set<JavascriptChannel> jsChannels() {
     return Set.from([
+      JavascriptChannel(
+          name: "InputCallback",
+          onMessageReceived: (jm) {
+            try {
+              var json = jsonDecode(jm.message.replaceAll("'", '"'));
+              widget.inputCallback?.call(json);
+            } catch (e) {
+              print(e);
+            }
+          }),
       JavascriptChannel(
           name: 'TeXViewRenderedCallback',
           onMessageReceived: (_) async {

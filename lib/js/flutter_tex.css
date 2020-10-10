@@ -24,6 +24,26 @@
     animation: ripple 0.5s linear;
 }
 
+input {
+    text-align: center;
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+    color: black;
+    background: #f7f7f7;
+    width: 150px;
+    height: 32px;
+}
+
+input:focus {
+    text-align: center;
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+    color: black;
+    background: #f7f7f7;
+    width: 150px;
+    height: 32px;
+}
+
 @keyframes ripple {
     to {
         transform: scale(2.5);

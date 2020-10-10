@@ -27,6 +27,7 @@ flutter:
     - packages/flutter_tex/js/mathjax/extensions/Safe.js
     - packages/flutter_tex/js/mathjax/extensions/FontWarnings.js
     - packages/flutter_tex/js/mathjax/extensions/tex2jax.js
+    - packages/flutter_tex/js/mathjax/extensions/mml2jax.js
     - packages/flutter_tex/js/mathjax/extensions/MatchWebFonts.js
     - packages/flutter_tex/js/mathjax/extensions/AssistiveMML.js
     - packages/flutter_tex/js/mathjax/extensions/MathZoom.js
@@ -273,6 +274,8 @@ flutter:
     - packages/flutter_tex/js/mathjax/jax/output/SVG/autoload/mmultiscripts.js
     - packages/flutter_tex/js/mathjax/jax/input/TeX/jax.js
     - packages/flutter_tex/js/mathjax/jax/input/TeX/config.js
+    - packages/flutter_tex/js/mathjax/jax/input/MathML/jax.js
+    - packages/flutter_tex/js/mathjax/jax/input/MathML/config.js
     #Katex
     - packages/flutter_tex/js/katex/katex.css
     - packages/flutter_tex/js/katex/katex.mjs
