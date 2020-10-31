@@ -15,9 +15,9 @@ class TeXViewDocument extends TeXViewWidget {
     this.id = id;
     this.style = style;
     this.data = data
-        .replaceAll(new RegExp(r"/&lt;dot&gt;/g"),
+        .replaceAll(new RegExp(r"<dot>", multiLine: true),
             '<font class="question_dot_underline">')
-        .replaceAll(new RegExp(r"/&lt;\/dot&gt;/g"), "</font>");
+        .replaceAll(new RegExp(r"<\/dot>", multiLine: true), "</font>");
   }
 
   @override
