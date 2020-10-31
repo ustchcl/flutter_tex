@@ -51,7 +51,7 @@ input:focus {
     height: 4px;
     bottom: -4px;
     left: 0;
-    background: url(./mathjax/images/dot.png) repeat-x 0 center;
+    background: url(./images/dot.png) repeat-x 0 center;
 }
 
 .question_dot_underline {
