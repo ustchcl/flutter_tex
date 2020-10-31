@@ -14,7 +14,6 @@ class TeXViewDocument extends TeXViewWidget {
   TeXViewDocument(String data, {String id, TeXViewStyle style}) {
     this.id = id;
     this.style = style;
-    print("dotted ${this.data.contains("<dot>")}");
     this.data = data
         .replaceAll(new RegExp(r"<dot>", multiLine: true),
             '<font class="question_dot_underline">')
