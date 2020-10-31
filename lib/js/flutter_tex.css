@@ -44,6 +44,20 @@ input:focus {
     height: 32px;
 }
 
+.question_dot_underline::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 4px;
+    bottom: -4px;
+    left: 0;
+    background: url(./mathjax/images/dot.png) repeat-x 0 center;
+}
+
+.question_dot_underline {
+  position: relative;
+}
+
 @keyframes ripple {
     to {
         transform: scale(2.5);
