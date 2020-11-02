@@ -276,6 +276,7 @@ flutter:
     - packages/flutter_tex/js/mathjax/jax/input/TeX/config.js
     - packages/flutter_tex/js/mathjax/jax/input/MathML/jax.js
     - packages/flutter_tex/js/mathjax/jax/input/MathML/config.js
+    - packages/flutter_tex/js/mathjax/images/dot.png
     #Katex
     - packages/flutter_tex/js/katex/katex.css
     - packages/flutter_tex/js/katex/katex.mjs
